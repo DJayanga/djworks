@@ -6,6 +6,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+        Scanner s = new Scanner(System.in);
+
         Cars car1 = new Cars();
         Cars car2 = new Cars();
         Cars car3 = new Cars();
@@ -42,7 +44,6 @@ public class Main {
         b4.cost = "$6700";
         b5.cost = "$7000";
 
-        Scanner s = new Scanner(System.in);
         System.out.println("What Do You Want to Buy?");
         System.out.println("Input 1 for Bikes");
         System.out.println("Input 2 for Cars");
@@ -51,14 +52,14 @@ public class Main {
         int choice = s.nextInt();
 
         if (choice == 1) {
-            System.out.print("We have 5 Bike models.");
+            System.out.println("We have 5 Bike models.");
             System.out.println("1. " + b1.name);
             System.out.println("2. " + b2.name);
             System.out.println("3. " + b3.name);
             System.out.println("4. " + b4.name);
             System.out.println("5. " + b5.name);
 
-            System.out.println("Which Bike do you like : ");
+            System.out.print("Which Bike do you like : ");
             int n = s.nextInt();
             if (n==1){
                 System.out.println("The Cost of "+ b1.name + " is "+b1.cost +".");
@@ -81,7 +82,7 @@ public class Main {
         }
 
         else if (choice == 2) {
-            System.out.println("We have 5 Bike models.");
+            System.out.println("We have 5 Car  models.");
             System.out.println("1. " + car1.name);
             System.out.println("2. " + car2.name);
             System.out.println("3. " + car3.name);
